@@ -63,7 +63,7 @@ namespace OnlyPans
             // Btniniciar
             // 
             this.Btniniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btniniciar.Location = new System.Drawing.Point(297, 292);
+            this.Btniniciar.Location = new System.Drawing.Point(294, 283);
             this.Btniniciar.Name = "Btniniciar";
             this.Btniniciar.Size = new System.Drawing.Size(121, 26);
             this.Btniniciar.TabIndex = 2;
