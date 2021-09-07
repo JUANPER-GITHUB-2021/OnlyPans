@@ -291,7 +291,7 @@ namespace OnlyPans
             // 
             this.richTextBox1.Location = new System.Drawing.Point(481, 105);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(333, 341);
+            this.richTextBox1.Size = new System.Drawing.Size(333, 342);
             this.richTextBox1.TabIndex = 32;
             this.richTextBox1.Text = "";
             // 

@@ -41,7 +41,7 @@ namespace OnlyPans
             // 
             this.Lbltitulo.AutoSize = true;
             this.Lbltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbltitulo.Location = new System.Drawing.Point(198, 43);
+            this.Lbltitulo.Location = new System.Drawing.Point(31, 30);
             this.Lbltitulo.Name = "Lbltitulo";
             this.Lbltitulo.Size = new System.Drawing.Size(365, 33);
             this.Lbltitulo.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace OnlyPans
             // 
             this.Lblusuario.AutoSize = true;
             this.Lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lblusuario.Location = new System.Drawing.Point(234, 131);
+            this.Lblusuario.Location = new System.Drawing.Point(77, 115);
             this.Lblusuario.Name = "Lblusuario";
             this.Lblusuario.Size = new System.Drawing.Size(68, 20);
             this.Lblusuario.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace OnlyPans
             // Btniniciar
             // 
             this.Btniniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btniniciar.Location = new System.Drawing.Point(294, 283);
+            this.Btniniciar.Location = new System.Drawing.Point(150, 267);
             this.Btniniciar.Name = "Btniniciar";
             this.Btniniciar.Size = new System.Drawing.Size(121, 26);
             this.Btniniciar.TabIndex = 2;
@@ -72,14 +72,14 @@ namespace OnlyPans
             // 
             // Txtboxusuario
             // 
-            this.Txtboxusuario.Location = new System.Drawing.Point(307, 131);
+            this.Txtboxusuario.Location = new System.Drawing.Point(150, 115);
             this.Txtboxusuario.Name = "Txtboxusuario";
             this.Txtboxusuario.Size = new System.Drawing.Size(183, 20);
             this.Txtboxusuario.TabIndex = 3;
             // 
             // Txtboxcontraseña
             // 
-            this.Txtboxcontraseña.Location = new System.Drawing.Point(336, 208);
+            this.Txtboxcontraseña.Location = new System.Drawing.Point(179, 192);
             this.Txtboxcontraseña.Name = "Txtboxcontraseña";
             this.Txtboxcontraseña.Size = new System.Drawing.Size(154, 20);
             this.Txtboxcontraseña.TabIndex = 4;
@@ -88,7 +88,7 @@ namespace OnlyPans
             // 
             this.Lblcontraseña.AutoSize = true;
             this.Lblcontraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lblcontraseña.Location = new System.Drawing.Point(234, 206);
+            this.Lblcontraseña.Location = new System.Drawing.Point(77, 190);
             this.Lblcontraseña.Name = "Lblcontraseña";
             this.Lblcontraseña.Size = new System.Drawing.Size(96, 20);
             this.Lblcontraseña.TabIndex = 5;
@@ -98,7 +98,7 @@ namespace OnlyPans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 382);
+            this.ClientSize = new System.Drawing.Size(430, 330);
             this.Controls.Add(this.Lblcontraseña);
             this.Controls.Add(this.Txtboxcontraseña);
             this.Controls.Add(this.Txtboxusuario);

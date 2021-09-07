@@ -30,8 +30,8 @@ namespace OnlyPans
         private void InitializeComponent()
         {
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.Txtboxhistorial = new System.Windows.Forms.TextBox();
             this.Btnhistorial = new System.Windows.Forms.Button();
+            this.Lblhistorialventas = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -42,32 +42,33 @@ namespace OnlyPans
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // Txtboxhistorial
-            // 
-            this.Txtboxhistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txtboxhistorial.Location = new System.Drawing.Point(153, 12);
-            this.Txtboxhistorial.Name = "Txtboxhistorial";
-            this.Txtboxhistorial.Size = new System.Drawing.Size(354, 38);
-            this.Txtboxhistorial.TabIndex = 1;
-            this.Txtboxhistorial.Text = "HISTORIAL DE VENTAS:";
-            // 
             // Btnhistorial
             // 
             this.Btnhistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnhistorial.Location = new System.Drawing.Point(29, 12);
+            this.Btnhistorial.Location = new System.Drawing.Point(23, 22);
             this.Btnhistorial.Name = "Btnhistorial";
             this.Btnhistorial.Size = new System.Drawing.Size(93, 53);
             this.Btnhistorial.TabIndex = 2;
             this.Btnhistorial.Text = "GENERAR HISTORIAL";
             this.Btnhistorial.UseVisualStyleBackColor = true;
             // 
+            // Lblhistorialventas
+            // 
+            this.Lblhistorialventas.AutoSize = true;
+            this.Lblhistorialventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblhistorialventas.Location = new System.Drawing.Point(147, 22);
+            this.Lblhistorialventas.Name = "Lblhistorialventas";
+            this.Lblhistorialventas.Size = new System.Drawing.Size(348, 31);
+            this.Lblhistorialventas.TabIndex = 3;
+            this.Lblhistorialventas.Text = "HISTORIAL DE VENTAS:";
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 450);
+            this.Controls.Add(this.Lblhistorialventas);
             this.Controls.Add(this.Btnhistorial);
-            this.Controls.Add(this.Txtboxhistorial);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Administrador";
             this.Text = "Administrador";
@@ -79,7 +80,7 @@ namespace OnlyPans
         #endregion
 
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox Txtboxhistorial;
         private System.Windows.Forms.Button Btnhistorial;
+        private System.Windows.Forms.Label Lblhistorialventas;
     }
 }
