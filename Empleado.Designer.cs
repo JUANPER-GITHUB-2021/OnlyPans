@@ -238,10 +238,12 @@ namespace OnlyPans
             // RctxtboxVentas
             // 
             this.RctxtboxVentas.Location = new System.Drawing.Point(449, 105);
+            this.RctxtboxVentas.MinimumSize = new System.Drawing.Size(333, 342);
             this.RctxtboxVentas.Name = "RctxtboxVentas";
             this.RctxtboxVentas.Size = new System.Drawing.Size(333, 342);
             this.RctxtboxVentas.TabIndex = 32;
             this.RctxtboxVentas.Text = "";
+            this.RctxtboxVentas.TextChanged += new System.EventHandler(this.RctxtboxVentas_TextChanged);
             // 
             // BtnCerrarsesion
             // 

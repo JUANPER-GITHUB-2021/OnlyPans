@@ -36,6 +36,7 @@ namespace OnlyPans
             this.Txtboxusuario = new System.Windows.Forms.TextBox();
             this.Txtboxcontraseña = new System.Windows.Forms.TextBox();
             this.Lblcontraseña = new System.Windows.Forms.Label();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbltitulo
@@ -100,18 +101,30 @@ namespace OnlyPans
             this.Lblcontraseña.Text = "Contraseña:";
             this.Lblcontraseña.Click += new System.EventHandler(this.Lblcontraseña_Click);
             // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Location = new System.Drawing.Point(537, 406);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 6;
+            this.BtnSalir.Text = "SALIR";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.button1_Click);
+            // 
             // iniciarsesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(634, 536);
+            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.Lblcontraseña);
             this.Controls.Add(this.Txtboxcontraseña);
             this.Controls.Add(this.Txtboxusuario);
             this.Controls.Add(this.Btniniciar);
             this.Controls.Add(this.Lblusuario);
             this.Controls.Add(this.Lbltitulo);
+            this.MaximumSize = new System.Drawing.Size(640, 480);
             this.Name = "iniciarsesion";
             this.Text = "Iniciar Sesión";
             this.Load += new System.EventHandler(this.iniciarsesion_Load);
@@ -128,6 +141,7 @@ namespace OnlyPans
         private System.Windows.Forms.TextBox Txtboxusuario;
         private System.Windows.Forms.TextBox Txtboxcontraseña;
         private System.Windows.Forms.Label Lblcontraseña;
+        private System.Windows.Forms.Button BtnSalir;
     }
 }
 

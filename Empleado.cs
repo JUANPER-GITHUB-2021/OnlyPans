@@ -94,14 +94,17 @@ namespace OnlyPans
 
         private void BtnCerrarsesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            iniciarsesion Form = new iniciarsesion();
-            Form.ShowDialog();
+            this.Close();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void RctxtboxVentas_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
