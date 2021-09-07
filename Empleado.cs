@@ -64,21 +64,41 @@ namespace OnlyPans
 
         private void Valortotalventa_TextChanged(object sender, EventArgs e)
         {
-            double Numpanaliñado, Numpannoaliñado, Numpanespecial, Valorventa;
-
-            Numpanaliñado = Convert.ToDouble(NumpanA);
-            Numpannoaliñado = Convert.ToDouble(NumpanNA);
-            Numpanespecial = Convert.ToDouble(NumpanE);
-            Valorventa = (Numpanaliñado * 1000) + (Numpannoaliñado * 500) + (Numpanespecial * 2000);
-            string valorventatext;
-            valorventatext = Convert.ToString(Valorventa);
-            Valortotalventa.Text = valorventatext;
 
         }
 
         private void Btnvender_Click(object sender, EventArgs e)
         {
-            
+            double Numpanaliñado, Numpannoaliñado, Numpanespecial, Valorventa;
+
+            Numpanaliñado = Convert.ToDouble(TxtNumPanA.Text);
+            Numpannoaliñado = Convert.ToDouble(TxtNumPanNA.Text);
+            Numpanespecial = Convert.ToDouble(TxtNumPanE.Text);
+            Valorventa = ((Numpanaliñado * 1000) + (Numpannoaliñado * 500) + (Numpanespecial * 2000));
+            string valorventatext;
+            valorventatext = Convert.ToString(Valorventa);
+            Valortotalventa.Text = valorventatext;
+            RctxtboxVentas.Text = "VENTA \n" + "DATOS CLIENTE \n" + "Nombre: " + Txtboxnombre.Text + "\n" + "Cedula: " + Txtboxcedula.Text + "\n" + "DATOS VENTA \n" + "Numero Panes Aliñados: " + TxtNumPanA.Text
+            + "\n" + "Numero Panes No Aliñados: " + TxtNumPanNA.Text + "\n" + "Numero Panes Especiales: " + TxtNumPanE.Text + "\n" + "Valor total de la venta: $" + Valortotalventa.Text + "\n" + "Hora de Venta: " + Txtboxhora.Text + "\n" + "-----------------------------------------------------------------------------------------------------" +
+            "\n" + Txtboxguardado.Text;
+            Clipboard.SetText(RctxtboxVentas.Text);
+            Txtboxguardado.Text = Clipboard.GetText();
+            Txtboxnombre.Clear();
+            Txtboxcedula.Clear();
+            TxtNumPanA.Clear();
+            TxtNumPanNA.Clear();
+            TxtNumPanE.Clear();
+            Txtboxhora.Clear();
+        }
+
+        private void BtnCerrarsesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

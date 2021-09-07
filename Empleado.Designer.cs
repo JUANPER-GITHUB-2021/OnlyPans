@@ -33,27 +33,27 @@ namespace OnlyPans
             this.LblTituloVenta = new System.Windows.Forms.Label();
             this.Lblnombre = new System.Windows.Forms.Label();
             this.Lblcedula = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txtboxnombre = new System.Windows.Forms.TextBox();
+            this.Txtboxcedula = new System.Windows.Forms.TextBox();
             this.LblDatoscliente = new System.Windows.Forms.Label();
             this.LblDatosventa = new System.Windows.Forms.Label();
             this.LblcantpanA = new System.Windows.Forms.Label();
             this.LblCantpanNA = new System.Windows.Forms.Label();
             this.LblcantpanE = new System.Windows.Forms.Label();
-            this.NumpanA = new System.Windows.Forms.NumericUpDown();
-            this.NumpanNA = new System.Windows.Forms.NumericUpDown();
-            this.NumpanE = new System.Windows.Forms.NumericUpDown();
             this.Lblhoraventa = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Txtboxhora = new System.Windows.Forms.TextBox();
             this.Valortotalventa = new System.Windows.Forms.TextBox();
             this.LblpanA = new System.Windows.Forms.Label();
             this.LblpanE = new System.Windows.Forms.Label();
             this.LblpanNA = new System.Windows.Forms.Label();
             this.Lblventasrealizadas = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.NumpanA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumpanNA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumpanE)).BeginInit();
+            this.RctxtboxVentas = new System.Windows.Forms.RichTextBox();
+            this.BtnCerrarsesion = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.Txtboxguardado = new System.Windows.Forms.TextBox();
+            this.TxtNumPanA = new System.Windows.Forms.TextBox();
+            this.TxtNumPanNA = new System.Windows.Forms.TextBox();
+            this.TxtNumPanE = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Btnvender
@@ -99,19 +99,19 @@ namespace OnlyPans
             this.Lblcedula.Text = "Cedula:";
             this.Lblcedula.Click += new System.EventHandler(this.Lblcedula_Click);
             // 
-            // textBox1
+            // Txtboxnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(137, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 20);
-            this.textBox1.TabIndex = 7;
+            this.Txtboxnombre.Location = new System.Drawing.Point(137, 131);
+            this.Txtboxnombre.Name = "Txtboxnombre";
+            this.Txtboxnombre.Size = new System.Drawing.Size(196, 20);
+            this.Txtboxnombre.TabIndex = 7;
             // 
-            // textBox2
+            // Txtboxcedula
             // 
-            this.textBox2.Location = new System.Drawing.Point(137, 169);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(97, 20);
-            this.textBox2.TabIndex = 8;
+            this.Txtboxcedula.Location = new System.Drawing.Point(137, 169);
+            this.Txtboxcedula.Name = "Txtboxcedula";
+            this.Txtboxcedula.Size = new System.Drawing.Size(97, 20);
+            this.Txtboxcedula.TabIndex = 8;
             // 
             // LblDatoscliente
             // 
@@ -165,28 +165,6 @@ namespace OnlyPans
             this.LblcantpanE.Text = "Cantidad:";
             this.LblcantpanE.Click += new System.EventHandler(this.label3_Click);
             // 
-            // NumpanA
-            // 
-            this.NumpanA.Location = new System.Drawing.Point(262, 263);
-            this.NumpanA.Name = "NumpanA";
-            this.NumpanA.Size = new System.Drawing.Size(61, 20);
-            this.NumpanA.TabIndex = 19;
-            this.NumpanA.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
-            // 
-            // NumpanNA
-            // 
-            this.NumpanNA.Location = new System.Drawing.Point(262, 297);
-            this.NumpanNA.Name = "NumpanNA";
-            this.NumpanNA.Size = new System.Drawing.Size(61, 20);
-            this.NumpanNA.TabIndex = 20;
-            // 
-            // NumpanE
-            // 
-            this.NumpanE.Location = new System.Drawing.Point(262, 331);
-            this.NumpanE.Name = "NumpanE";
-            this.NumpanE.Size = new System.Drawing.Size(61, 20);
-            this.NumpanE.TabIndex = 21;
-            // 
             // Lblhoraventa
             // 
             this.Lblhoraventa.AutoSize = true;
@@ -198,12 +176,12 @@ namespace OnlyPans
             this.Lblhoraventa.Text = "Hora de venta:";
             this.Lblhoraventa.Click += new System.EventHandler(this.label1_Click_2);
             // 
-            // textBox3
+            // Txtboxhora
             // 
-            this.textBox3.Location = new System.Drawing.Point(164, 372);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(102, 20);
-            this.textBox3.TabIndex = 23;
+            this.Txtboxhora.Location = new System.Drawing.Point(164, 372);
+            this.Txtboxhora.Name = "Txtboxhora";
+            this.Txtboxhora.Size = new System.Drawing.Size(102, 20);
+            this.Txtboxhora.TabIndex = 23;
             // 
             // Valortotalventa
             // 
@@ -250,52 +228,101 @@ namespace OnlyPans
             // 
             this.Lblventasrealizadas.AutoSize = true;
             this.Lblventasrealizadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lblventasrealizadas.Location = new System.Drawing.Point(476, 77);
+            this.Lblventasrealizadas.Location = new System.Drawing.Point(444, 77);
             this.Lblventasrealizadas.Name = "Lblventasrealizadas";
             this.Lblventasrealizadas.Size = new System.Drawing.Size(190, 25);
             this.Lblventasrealizadas.TabIndex = 31;
             this.Lblventasrealizadas.Text = "Ventas realizadas:";
             // 
-            // richTextBox1
+            // RctxtboxVentas
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(481, 105);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(333, 342);
-            this.richTextBox1.TabIndex = 32;
-            this.richTextBox1.Text = "";
+            this.RctxtboxVentas.Location = new System.Drawing.Point(449, 105);
+            this.RctxtboxVentas.Name = "RctxtboxVentas";
+            this.RctxtboxVentas.Size = new System.Drawing.Size(333, 342);
+            this.RctxtboxVentas.TabIndex = 32;
+            this.RctxtboxVentas.Text = "";
+            // 
+            // BtnCerrarsesion
+            // 
+            this.BtnCerrarsesion.Location = new System.Drawing.Point(493, 453);
+            this.BtnCerrarsesion.Name = "BtnCerrarsesion";
+            this.BtnCerrarsesion.Size = new System.Drawing.Size(111, 23);
+            this.BtnCerrarsesion.TabIndex = 33;
+            this.BtnCerrarsesion.Text = "CERRAR SESIÓN";
+            this.BtnCerrarsesion.UseVisualStyleBackColor = true;
+            this.BtnCerrarsesion.Click += new System.EventHandler(this.BtnCerrarsesion_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Location = new System.Drawing.Point(663, 453);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 34;
+            this.BtnSalir.Text = "SALIR";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // Txtboxguardado
+            // 
+            this.Txtboxguardado.Location = new System.Drawing.Point(663, 83);
+            this.Txtboxguardado.Name = "Txtboxguardado";
+            this.Txtboxguardado.Size = new System.Drawing.Size(100, 20);
+            this.Txtboxguardado.TabIndex = 35;
+            this.Txtboxguardado.Visible = false;
+            // 
+            // TxtNumPanA
+            // 
+            this.TxtNumPanA.Location = new System.Drawing.Point(262, 263);
+            this.TxtNumPanA.Name = "TxtNumPanA";
+            this.TxtNumPanA.Size = new System.Drawing.Size(43, 20);
+            this.TxtNumPanA.TabIndex = 36;
+            // 
+            // TxtNumPanNA
+            // 
+            this.TxtNumPanNA.Location = new System.Drawing.Point(262, 296);
+            this.TxtNumPanNA.Name = "TxtNumPanNA";
+            this.TxtNumPanNA.Size = new System.Drawing.Size(43, 20);
+            this.TxtNumPanNA.TabIndex = 37;
+            // 
+            // TxtNumPanE
+            // 
+            this.TxtNumPanE.Location = new System.Drawing.Point(262, 332);
+            this.TxtNumPanE.Name = "TxtNumPanE";
+            this.TxtNumPanE.Size = new System.Drawing.Size(43, 20);
+            this.TxtNumPanE.TabIndex = 38;
             // 
             // Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(826, 505);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.TxtNumPanE);
+            this.Controls.Add(this.TxtNumPanNA);
+            this.Controls.Add(this.TxtNumPanA);
+            this.Controls.Add(this.Txtboxguardado);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.BtnCerrarsesion);
+            this.Controls.Add(this.RctxtboxVentas);
             this.Controls.Add(this.Lblventasrealizadas);
             this.Controls.Add(this.LblpanNA);
             this.Controls.Add(this.LblpanE);
             this.Controls.Add(this.LblpanA);
             this.Controls.Add(this.Valortotalventa);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Txtboxhora);
             this.Controls.Add(this.Lblhoraventa);
-            this.Controls.Add(this.NumpanE);
-            this.Controls.Add(this.NumpanNA);
-            this.Controls.Add(this.NumpanA);
             this.Controls.Add(this.LblcantpanE);
             this.Controls.Add(this.LblCantpanNA);
             this.Controls.Add(this.LblcantpanA);
             this.Controls.Add(this.LblDatosventa);
             this.Controls.Add(this.LblDatoscliente);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txtboxcedula);
+            this.Controls.Add(this.Txtboxnombre);
             this.Controls.Add(this.Lblcedula);
             this.Controls.Add(this.Lblnombre);
             this.Controls.Add(this.LblTituloVenta);
             this.Controls.Add(this.Btnvender);
             this.Name = "Empleado";
             this.Text = "Empleado";
-            ((System.ComponentModel.ISupportInitialize)(this.NumpanA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumpanNA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumpanE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,23 +334,26 @@ namespace OnlyPans
         private System.Windows.Forms.Label LblTituloVenta;
         private System.Windows.Forms.Label Lblnombre;
         private System.Windows.Forms.Label Lblcedula;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txtboxnombre;
+        private System.Windows.Forms.TextBox Txtboxcedula;
         private System.Windows.Forms.Label LblDatoscliente;
         private System.Windows.Forms.Label LblDatosventa;
         private System.Windows.Forms.Label LblcantpanA;
         private System.Windows.Forms.Label LblCantpanNA;
         private System.Windows.Forms.Label LblcantpanE;
-        private System.Windows.Forms.NumericUpDown NumpanA;
-        private System.Windows.Forms.NumericUpDown NumpanNA;
-        private System.Windows.Forms.NumericUpDown NumpanE;
         private System.Windows.Forms.Label Lblhoraventa;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Txtboxhora;
         private System.Windows.Forms.TextBox Valortotalventa;
         private System.Windows.Forms.Label LblpanA;
         private System.Windows.Forms.Label LblpanE;
         private System.Windows.Forms.Label LblpanNA;
         private System.Windows.Forms.Label Lblventasrealizadas;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox RctxtboxVentas;
+        private System.Windows.Forms.Button BtnCerrarsesion;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.TextBox Txtboxguardado;
+        private System.Windows.Forms.TextBox TxtNumPanA;
+        private System.Windows.Forms.TextBox TxtNumPanNA;
+        private System.Windows.Forms.TextBox TxtNumPanE;
     }
 }

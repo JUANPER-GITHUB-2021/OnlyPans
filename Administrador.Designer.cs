@@ -32,8 +32,8 @@ namespace OnlyPans
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.Btnhistorial = new System.Windows.Forms.Button();
             this.Lblhistorialventas = new System.Windows.Forms.Label();
-            this.BtnCerrarsesion = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnCerrarsesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -64,6 +64,16 @@ namespace OnlyPans
             this.Lblhistorialventas.TabIndex = 3;
             this.Lblhistorialventas.Text = "HISTORIAL DE VENTAS:";
             // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Location = new System.Drawing.Point(23, 404);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 5;
+            this.BtnSalir.Text = "SALIR";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
             // BtnCerrarsesion
             // 
             this.BtnCerrarsesion.Location = new System.Drawing.Point(23, 363);
@@ -73,15 +83,6 @@ namespace OnlyPans
             this.BtnCerrarsesion.Text = "CERRAR SESIÓN";
             this.BtnCerrarsesion.UseVisualStyleBackColor = true;
             this.BtnCerrarsesion.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.Location = new System.Drawing.Point(23, 404);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
-            this.BtnSalir.TabIndex = 5;
-            this.BtnSalir.Text = "SALIR";
-            this.BtnSalir.UseVisualStyleBackColor = true;
             // 
             // Administrador
             // 
@@ -106,7 +107,7 @@ namespace OnlyPans
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button Btnhistorial;
         private System.Windows.Forms.Label Lblhistorialventas;
-        private System.Windows.Forms.Button BtnCerrarsesion;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnCerrarsesion;
     }
 }
