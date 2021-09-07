@@ -83,6 +83,7 @@ namespace OnlyPans
             "\n" + Txtboxguardado.Text;
             Clipboard.SetText(RctxtboxVentas.Text);
             Txtboxguardado.Text = Clipboard.GetText();
+            String Historialventas = RctxtboxVentas.Text;
             Txtboxnombre.Clear();
             Txtboxcedula.Clear();
             TxtNumPanA.Clear();
@@ -93,7 +94,9 @@ namespace OnlyPans
 
         private void BtnCerrarsesion_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            iniciarsesion Form = new iniciarsesion();
+            Form.ShowDialog();
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

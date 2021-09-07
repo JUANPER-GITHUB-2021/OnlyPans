@@ -31,5 +31,10 @@ namespace OnlyPans
         {
             Application.Exit();
         }
+
+        private void Btnhistorial_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

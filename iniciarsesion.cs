@@ -76,5 +76,20 @@ namespace OnlyPans
                 }
             }
         }
+
+        private void Txtboxusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lblcontraseña_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtboxcontraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

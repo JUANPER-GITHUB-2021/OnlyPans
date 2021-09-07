@@ -29,6 +29,7 @@ namespace OnlyPans
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleado));
             this.Btnvender = new System.Windows.Forms.Button();
             this.LblTituloVenta = new System.Windows.Forms.Label();
             this.Lblnombre = new System.Windows.Forms.Label();
@@ -295,6 +296,7 @@ namespace OnlyPans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(826, 505);
             this.Controls.Add(this.TxtNumPanE);
             this.Controls.Add(this.TxtNumPanNA);
@@ -348,12 +350,12 @@ namespace OnlyPans
         private System.Windows.Forms.Label LblpanE;
         private System.Windows.Forms.Label LblpanNA;
         private System.Windows.Forms.Label Lblventasrealizadas;
-        private System.Windows.Forms.RichTextBox RctxtboxVentas;
         private System.Windows.Forms.Button BtnCerrarsesion;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.TextBox Txtboxguardado;
         private System.Windows.Forms.TextBox TxtNumPanA;
         private System.Windows.Forms.TextBox TxtNumPanNA;
         private System.Windows.Forms.TextBox TxtNumPanE;
+        public System.Windows.Forms.RichTextBox RctxtboxVentas;
     }
 }
