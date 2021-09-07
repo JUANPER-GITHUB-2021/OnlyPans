@@ -69,6 +69,7 @@ namespace OnlyPans
             this.Btniniciar.TabIndex = 2;
             this.Btniniciar.Text = "INICIAR SESIÓN";
             this.Btniniciar.UseVisualStyleBackColor = true;
+            this.Btniniciar.Click += new System.EventHandler(this.Btniniciar_Click);
             // 
             // Txtboxusuario
             // 
@@ -83,6 +84,7 @@ namespace OnlyPans
             this.Txtboxcontraseña.Name = "Txtboxcontraseña";
             this.Txtboxcontraseña.Size = new System.Drawing.Size(154, 20);
             this.Txtboxcontraseña.TabIndex = 4;
+            this.Txtboxcontraseña.UseSystemPasswordChar = true;
             // 
             // Lblcontraseña
             // 
@@ -107,6 +109,7 @@ namespace OnlyPans
             this.Controls.Add(this.Lbltitulo);
             this.Name = "iniciarsesion";
             this.Text = "Iniciar Sesión";
+            this.Load += new System.EventHandler(this.iniciarsesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

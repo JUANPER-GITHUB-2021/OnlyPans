@@ -16,5 +16,15 @@ namespace OnlyPans
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Administrador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

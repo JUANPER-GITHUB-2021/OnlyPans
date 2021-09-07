@@ -64,7 +64,21 @@ namespace OnlyPans
 
         private void Valortotalventa_TextChanged(object sender, EventArgs e)
         {
+            double Numpanaliñado, Numpannoaliñado, Numpanespecial, Valorventa;
 
+            Numpanaliñado = Convert.ToDouble(NumpanA);
+            Numpannoaliñado = Convert.ToDouble(NumpanNA);
+            Numpanespecial = Convert.ToDouble(NumpanE);
+            Valorventa = (Numpanaliñado * 1000) + (Numpannoaliñado * 500) + (Numpanespecial * 2000);
+            string valorventatext;
+            valorventatext = Convert.ToString(Valorventa);
+            Valortotalventa.Text = valorventatext;
+
+        }
+
+        private void Btnvender_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -45,9 +45,6 @@ namespace OnlyPans
             this.NumpanE = new System.Windows.Forms.NumericUpDown();
             this.Lblhoraventa = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.ValorpanA = new System.Windows.Forms.TextBox();
-            this.ValorpanNA = new System.Windows.Forms.TextBox();
-            this.ValorpanE = new System.Windows.Forms.TextBox();
             this.Valortotalventa = new System.Windows.Forms.TextBox();
             this.LblpanA = new System.Windows.Forms.Label();
             this.LblpanE = new System.Windows.Forms.Label();
@@ -68,6 +65,7 @@ namespace OnlyPans
             this.Btnvender.TabIndex = 0;
             this.Btnvender.Text = "VENDER";
             this.Btnvender.UseVisualStyleBackColor = true;
+            this.Btnvender.Click += new System.EventHandler(this.Btnvender_Click);
             // 
             // LblTituloVenta
             // 
@@ -207,42 +205,13 @@ namespace OnlyPans
             this.textBox3.Size = new System.Drawing.Size(102, 20);
             this.textBox3.TabIndex = 23;
             // 
-            // ValorpanA
-            // 
-            this.ValorpanA.Location = new System.Drawing.Point(329, 263);
-            this.ValorpanA.Name = "ValorpanA";
-            this.ValorpanA.Size = new System.Drawing.Size(34, 20);
-            this.ValorpanA.TabIndex = 24;
-            this.ValorpanA.Text = "1000";
-            this.ValorpanA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ValorpanA.Visible = false;
-            // 
-            // ValorpanNA
-            // 
-            this.ValorpanNA.Location = new System.Drawing.Point(329, 297);
-            this.ValorpanNA.Name = "ValorpanNA";
-            this.ValorpanNA.Size = new System.Drawing.Size(34, 20);
-            this.ValorpanNA.TabIndex = 25;
-            this.ValorpanNA.Text = "500";
-            this.ValorpanNA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ValorpanNA.Visible = false;
-            // 
-            // ValorpanE
-            // 
-            this.ValorpanE.Location = new System.Drawing.Point(329, 331);
-            this.ValorpanE.Name = "ValorpanE";
-            this.ValorpanE.Size = new System.Drawing.Size(34, 20);
-            this.ValorpanE.TabIndex = 26;
-            this.ValorpanE.Text = "2000";
-            this.ValorpanE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ValorpanE.Visible = false;
-            // 
             // Valortotalventa
             // 
-            this.Valortotalventa.Location = new System.Drawing.Point(320, 370);
+            this.Valortotalventa.Location = new System.Drawing.Point(204, 225);
             this.Valortotalventa.Name = "Valortotalventa";
             this.Valortotalventa.Size = new System.Drawing.Size(100, 20);
             this.Valortotalventa.TabIndex = 27;
+            this.Valortotalventa.Visible = false;
             this.Valortotalventa.TextChanged += new System.EventHandler(this.Valortotalventa_TextChanged);
             // 
             // LblpanA
@@ -306,9 +275,6 @@ namespace OnlyPans
             this.Controls.Add(this.LblpanE);
             this.Controls.Add(this.LblpanA);
             this.Controls.Add(this.Valortotalventa);
-            this.Controls.Add(this.ValorpanE);
-            this.Controls.Add(this.ValorpanNA);
-            this.Controls.Add(this.ValorpanA);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.Lblhoraventa);
             this.Controls.Add(this.NumpanE);
@@ -353,9 +319,6 @@ namespace OnlyPans
         private System.Windows.Forms.NumericUpDown NumpanE;
         private System.Windows.Forms.Label Lblhoraventa;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox ValorpanA;
-        private System.Windows.Forms.TextBox ValorpanNA;
-        private System.Windows.Forms.TextBox ValorpanE;
         private System.Windows.Forms.TextBox Valortotalventa;
         private System.Windows.Forms.Label LblpanA;
         private System.Windows.Forms.Label LblpanE;

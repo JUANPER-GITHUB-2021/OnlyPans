@@ -32,6 +32,8 @@ namespace OnlyPans
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.Btnhistorial = new System.Windows.Forms.Button();
             this.Lblhistorialventas = new System.Windows.Forms.Label();
+            this.BtnCerrarsesion = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -62,16 +64,38 @@ namespace OnlyPans
             this.Lblhistorialventas.TabIndex = 3;
             this.Lblhistorialventas.Text = "HISTORIAL DE VENTAS:";
             // 
+            // BtnCerrarsesion
+            // 
+            this.BtnCerrarsesion.Location = new System.Drawing.Point(23, 363);
+            this.BtnCerrarsesion.Name = "BtnCerrarsesion";
+            this.BtnCerrarsesion.Size = new System.Drawing.Size(75, 35);
+            this.BtnCerrarsesion.TabIndex = 4;
+            this.BtnCerrarsesion.Text = "CERRAR SESIÓN";
+            this.BtnCerrarsesion.UseVisualStyleBackColor = true;
+            this.BtnCerrarsesion.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Location = new System.Drawing.Point(23, 404);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 5;
+            this.BtnSalir.Text = "SALIR";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 450);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.BtnCerrarsesion);
             this.Controls.Add(this.Lblhistorialventas);
             this.Controls.Add(this.Btnhistorial);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Administrador";
             this.Text = "Administrador";
+            this.Load += new System.EventHandler(this.Administrador_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,5 +106,7 @@ namespace OnlyPans
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button Btnhistorial;
         private System.Windows.Forms.Label Lblhistorialventas;
+        private System.Windows.Forms.Button BtnCerrarsesion;
+        private System.Windows.Forms.Button BtnSalir;
     }
 }
