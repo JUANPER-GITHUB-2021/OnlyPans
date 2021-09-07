@@ -16,7 +16,7 @@ namespace OnlyPans
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new iniciarsesion());
+            Application.Run(new Empleado());
         }
     }
 }
